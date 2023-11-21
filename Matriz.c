@@ -1,12 +1,21 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int n, m;
+    int f, c;
     printf("Ingrese el numero de filas");
-    scanf("%d", &n);
+    scanf("%d", &f);
     printf("Ingrese el numero de columnas");
-    scanf("%d", &m);
+    scanf("%d", &c);
 
-    
+    int matrix [f][c];
+
+    for (int i = 0; i < n; i++)
+    {
+         for (int j = 0; j < m; j++)
+         {
+            matrix [i][j]=0;
+         }
+         
+    }
     return 0;
 }
