@@ -7,22 +7,31 @@ int main(int argc, char const *argv[])
     printf("Ingrese el numero de columnas");
     scanf("%d", &c);
 
-    int matrix [f][c];
+    int matrix[f][c];
 
     for (int i = 0; i < f; i++)
     {
-         for (int j = 0; j < c; j++)
-         {
-            matrix [i][j]=0;
-         }
-         
+        for (int j = 0; j < c; j++)
+        {
+            matrix[i][j] = 0;
+        }
     }
 
-     for (int i = 0; i < f && i < c; i++)
+    for (int i = 0; i < f && i < c; i++)
     {
-        matrix[i][i]=1;
+        matrix[i][i] = 1;
     }
 
+    printf("Matriz \n");
+
+    for (int i = 0; i < f; i++)
+    {
+        for (int j = 0; j < c; j++)
+        {
+            printf("%d", matrix[i][j]);
+        }
+        printf("\n");
+    }
 
     return 0;
 }
