@@ -9,13 +9,20 @@ int main(int argc, char const *argv[])
 
     int matrix [f][c];
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < f; i++)
     {
-         for (int j = 0; j < m; j++)
+         for (int j = 0; j < c; j++)
          {
             matrix [i][j]=0;
          }
          
     }
+
+     for (int i = 0; i < f && i < c; i++)
+    {
+        matrix[i][i]=1;
+    }
+
+
     return 0;
 }
